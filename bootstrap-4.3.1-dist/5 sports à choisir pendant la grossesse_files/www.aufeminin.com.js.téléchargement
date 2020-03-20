@@ -1,0 +1,56 @@
+/* Copyright 2011-2020 HeatMap Inc. - All rights reserved */
+window.heatmap_ext = window.heatmap_ext || {};
+
+heatmap_ext.bcr = 1;
+
+heatmap_ext.getCurrentURL = function() {
+	if (typeof afalbDisplayer != 'undefined' && afalbDisplayer.getCleanPermalink) return afalbDisplayer.getCleanPermalink();
+	if (typeof af_GBounce != 'undefined' && af_GBounce.open) return 'http://'+window.location.host+'/#google_bouncer';
+	return heatmap_ext.cleanupURL(window.location.href);
+};
+
+heatmap_ext.cleanupURL = function(u) {
+	// remove query params that do not affect the content of the page
+	u = u.replace(/((is_phone)=[^&#]*[&]?)/gi,'');
+	u = u.replace(/[#]filter=$/gi,'');
+	// remove last ?&#
+	u = u.replace(/[?&#]$/gi,'');
+	return u;
+};
+
+heatmap_ext.getURL = function (elt) {
+	var t = elt.tagName, c = elt.className || '';
+	if (elt.id && t=='DIV' && c.match(/(af-block-editorial-big|af-block-editorial-small)/g)) { // home
+		var a = elt.getElementsByTagName('A');
+		if (a) return a[0].href;
+	}
+	if (t=='A' && c.match(/(swipe-next|swipe-prev)/g)) return c.match(/(swipe-next|swipe-prev)/g); // home
+	if (t=='I' && c.match(/(icon-burger-menu|icon-search)/g)) return c.match(/(icon-burger-menu|icon-search)/g); // header
+	if (t=='DIV' && c.match(/(gig-composebox-rating-value|gig-composebox-textarea)/g)) return c.match(/(gig-composebox-rating-value|gig-composebox-textarea)/g); // club-expert
+	if (t=='SPAN' && c.match(/(gig-composebox-post)/g)) return c.match(/(gig-composebox-post)/g); // club-expert
+	if (elt.id && elt.id.match) {
+		if (elt.id.match(/(head-buzz|avatar)/g)) return elt.id; // header
+		if (elt.id.match(/(^af_diapo_\d+_|af_diapo_nextNav|af_diapo_prevNav)/)) return elt.id; // diaporama
+	}
+ };
+ 
+heatmap_ext.isActive = function (elt) {
+	var t = elt.tagName, c = elt.className || '';
+	if (elt.id && t=='DIV' && c.match(/(af-block-editorial-big|af-block-editorial-small)/g)) return true; // home
+	if (t=='A' && c.match(/(swipe-next|swipe-prev)/g)) return true; // home
+	if (t=='I' && c.match(/(icon-burger-menu|icon-search)/g)) return true; // header
+	if (t=='DIV' && c.match(/(gig-composebox-rating-value|gig-composebox-textarea)/g)) return true; // club-expert
+	if (t=='SPAN' && c.match(/(gig-composebox-post)/g)) return true; // club-expert
+	if (elt.id && elt.id.match) {
+		if (elt.id.match(/(head-buzz|avatar)/g)) return true; // header
+		if (elt.id.match(/(^af_diapo_\d+_|af_diapo_nextNav|af_diapo_prevNav)/)) return true; // diaporama
+	}
+};
+
+heatmap_ext.getTemplates = function(url) {
+	return [
+		{ name:'Forum thread', value:url.match(/\/forum\/[^?#&]+-fd(\d+)/i) },
+		{ name:'Forum list', value:url.match(/\/forum\/all$/i) }
+	];
+};
+heatmap.log.start(1,"eu8",1583100005);

@@ -1,0 +1,444 @@
+/* Warning If modify (adding or removing variables), please report changes to project_root/sites/(.?)/Front/partials/_variables.scss */
+/* width, size,... */
+/* End width, size, ... */
+/* Colors */
+/* Breadcrumb background back color */
+/* Forum colors */
+/* End colors */
+/* End fonts */
+/* Warning If modify (adding or removing variables), please report changes to project_root/sites/(.?)/Front/partials/_variables.scss */
+/* width, size,... */
+/* End width, size, ... */
+/* Colors */
+/* Breadcrumb background back color */
+/* Forum colors */
+/* End colors */
+/* End fonts */
+@font-face {
+  font-family: "cocogoose";
+  font-style: normal;
+  /* IE9 Compat Modes */
+  src: url("/reloaded/static/Front/Vendor/fonts/Cocogoose/CocogoosePro/CocogoosePro.eot");
+  /* IE6-IE8 */
+  /* Modern Browsers */
+  /* Safari, Android, iOS */
+  /* Legacy iOS */
+  src: url("/reloaded/static/Front/Vendor/fonts/Cocogoose/CocogoosePro/CocogoosePro.eot?#iefix") format("embedded-opentype"), url("/reloaded/static/Front/Vendor/fonts/Cocogoose/CocogoosePro/CocogoosePro.woff") format("woff"), url("/reloaded/static/Front/Vendor/fonts/Cocogoose/CocogoosePro/CocogoosePro.ttf") format("truetype"), url("/reloaded/static/Front/Vendor/fonts/Cocogoose/CocogoosePro/CocogoosePro.svg#CocogoosePro") format("svg"); }
+
+@font-face {
+  font-family: "helvetica";
+  src: url("/reloaded/static/Front/Vendor/fonts/Helvetica/Helvetica-Light.ttf");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: "helvetica";
+  src: url("/reloaded/static/Front/Vendor/fonts/Helvetica/Helvetica.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal; }
+
+@font-face {
+  font-family: "helvetica";
+  src: url("/reloaded/static/Front/Vendor/fonts/Helvetica/Helvetica-Bold.ttf");
+  font-weight: 700; }
+
+@font-face {
+  font-family: "helvetica";
+  src: url("/reloaded/static/Front/Vendor/fonts/Helvetica/Helvetica-LightOblique.ttf");
+  font-weight: 100;
+  font-style: italic; }
+
+@font-face {
+  font-family: "helvetica";
+  src: url("/reloaded/static/Front/Vendor/fonts/Helvetica/Helvetica-Oblique.ttf");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: "helvetica";
+  src: url("/reloaded/static/Front/Vendor/fonts/Helvetica/Helvetica-BoldOblique.ttf");
+  font-weight: 700;
+  font-style: italic; }
+
+@font-face {
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: 400;
+  /* IE9 Compat Modes */
+  src: url("/reloaded/static/Front/Vendor/fonts/Roboto/roboto-regular/roboto-regular.eot");
+  /* IE6-IE8 */
+  /* Super Modern Browsers */
+  /* Modern Browsers */
+  /* Safari, Android, iOS */
+  /* Legacy iOS */
+  src: url("/reloaded/static/Front/Vendor/fonts/Roboto/roboto-regular/roboto-regular.eot?#iefix") format("embedded-opentype"), url("/reloaded/static/Front/Vendor/fonts/Roboto/roboto-regular/roboto-regular.woff2") format("woff2"), url("/reloaded/static/Front/Vendor/fonts/Roboto/roboto-regular/roboto-regular.woff") format("woff"), url("/reloaded/static/Front/Vendor/fonts/Roboto/roboto-regular/roboto-regular.ttf") format("truetype"), url("/reloaded/static/Front/Vendor/fonts/Roboto/roboto-regular/roboto-regular.svg#Roboto") format("svg"); }
+
+@font-face {
+  font-family: "grandHotel";
+  font-style: normal;
+  src: url(/reloaded/static/Front/Vendor/fonts/GrandHotel/GrandHotel-Regular.ttf) format("truetype"); }
+
+@font-face {
+  font-family: "roboto-bold";
+  font-style: normal;
+  src: url(/reloaded/static/Front/Vendor/fonts/Roboto/Roboto-Bold.ttf) format("truetype"); }
+
+@font-face {
+  font-family: "roboto-thin";
+  font-style: normal;
+  src: url(/reloaded/static/Front/Vendor/fonts/Roboto/Roboto-Thin.ttf) format("truetype"); }
+
+.afModal-scotch-overlay {
+  position: fixed;
+  z-index: 550004000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 1ms opacity ease;
+  -moz-transition: 1ms opacity ease;
+  -ms-transition: 1ms opacity ease;
+  -o-transition: 1ms opacity ease;
+  transition: 1ms opacity ease;
+  background: #000; }
+
+.afModal-scotch-modal {
+  position: fixed;
+  z-index: 550004001;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  width: 94%;
+  padding: 24px 20px;
+  -webkit-transition: 1ms opacity ease;
+  -moz-transition: 1ms opacity ease;
+  -ms-transition: 1ms opacity ease;
+  -o-transition: 1ms opacity ease;
+  transition: 1ms opacity ease;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 2px;
+  background: #fff;
+  border-top: 4px solid #812555; }
+
+.afModal-scotch-modal.afModal-scotch-open.afModal-scotch-anchored {
+  top: 20px;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0); }
+
+afModal-.scotch-modal.afModal-scotch-open {
+  opacity: 1; }
+
+.afModal-scotch-overlay.afModal-scotch-open {
+  opacity: 1;
+  /* Close Button */ }
+
+.afModal-scotch-close {
+  font-size: 34px;
+  line-height: 12px;
+  position: absolute;
+  top: 15px;
+  right: 5px;
+  padding: 5px 7px 7px;
+  cursor: pointer;
+  color: #812555;
+  border: 0;
+  outline: none;
+  background-color: #fff;
+  /* Default Animation */ }
+
+.afModal-scotch-overlay.fade-and-drop {
+  display: block;
+  opacity: 0; }
+
+.afModal-scotch-modal.fade-and-drop {
+  top: -300%;
+  opacity: 1;
+  display: block; }
+
+.afModal-scotch-modal.fade-and-drop.afModal-scotch-open {
+  top: 50%;
+  -webkit-transition: 500ms top 500ms ease;
+  -moz-transition: 500ms top 500ms ease;
+  -ms-transition: 500ms top 500ms ease;
+  -o-transition: 500ms top 500ms ease;
+  transition: 500ms top 500ms ease; }
+
+.afModal-scotch-modal.fade-and-drop.afModal-scotch-open.afModal-scotch-anchored {
+  -webkit-transition: 500ms top 500ms ease;
+  -moz-transition: 500ms top 500ms ease;
+  -ms-transition: 500ms top 500ms ease;
+  -o-transition: 500ms top 500ms ease;
+  transition: 500ms top 500ms ease; }
+
+.afModal-scotch-overlay.fade-and-drop.afModal-scotch-open {
+  top: 0;
+  -webkit-transition: 500ms opacity ease;
+  -moz-transition: 500ms opacity ease;
+  -ms-transition: 500ms opacity ease;
+  -o-transition: 500ms opacity ease;
+  transition: 500ms opacity ease;
+  opacity: 0.7; }
+
+.afModal-scotch-modal.fade-and-drop {
+  -webkit-transition: 500ms top ease;
+  -moz-transition: 500ms top ease;
+  -ms-transition: 500ms top ease;
+  -o-transition: 500ms top ease;
+  transition: 500ms top ease; }
+
+.afModal-scotch-overlay.fade-and-drop {
+  -webkit-transition: 500ms top 500ms ease;
+  -moz-transition: 500ms top 500ms ease;
+  -ms-transition: 500ms top 500ms ease;
+  -o-transition: 500ms top 500ms ease;
+  transition: 500ms top 500ms ease; }
+
+@media (max-width: 767px) {
+  #subscribePopupModal {
+    max-height: 80%;
+    overflow: scroll; } }
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  src: url(/reloaded/static/Front/Vendor/fonts/Poppins/Poppins-Regular.ttf) format('truetype'); }
+
+.borderRadius9 {
+  -webkit-border-radius: 9px !important;
+  -moz-border-radius: 9px !important;
+  border-radius: 9px !important; }
+
+@media (max-width: 767px) {
+  #subscribePopupModal {
+    max-height: 80%;
+    overflow: scroll; }
+    .onleft {
+      float: none !important;
+      margin-top: 0px !important;
+      display: block; } }
+
+#subscribePopupData, #containerSubscribeForm, #subscribePopupModal {
+  text-align: center; }
+  #subscribePopupData .af_S2PopupV8, #containerSubscribeForm .af_S2PopupV8, #subscribePopupModal .af_S2PopupV8, #subscribePopupData .af_S2PopupV8WithCross, #containerSubscribeForm .af_S2PopupV8WithCross, #subscribePopupModal .af_S2PopupV8WithCross, #subscribePopupData .af_S2PopupV8WithRefuse, #containerSubscribeForm .af_S2PopupV8WithRefuse, #subscribePopupModal .af_S2PopupV8WithRefuse {
+    font-size: 15px !important;
+    color: #333;
+    background-color: #fef3ed; }
+    #subscribePopupData .af_S2PopupV8 .crossClose, #containerSubscribeForm .af_S2PopupV8 .crossClose, #subscribePopupModal .af_S2PopupV8 .crossClose, #subscribePopupData .af_S2PopupV8WithCross .crossClose, #containerSubscribeForm .af_S2PopupV8WithCross .crossClose, #subscribePopupModal .af_S2PopupV8WithCross .crossClose, #subscribePopupData .af_S2PopupV8WithRefuse .crossClose, #containerSubscribeForm .af_S2PopupV8WithRefuse .crossClose, #subscribePopupModal .af_S2PopupV8WithRefuse .crossClose {
+      text-align: right;
+      display: block;
+      margin-top: -15px;
+      font-weight: bold;
+      margin-right: -10px;
+      cursor: pointer; }
+    #subscribePopupData .af_S2PopupV8 .textleft, #containerSubscribeForm .af_S2PopupV8 .textleft, #subscribePopupModal .af_S2PopupV8 .textleft, #subscribePopupData .af_S2PopupV8WithCross .textleft, #containerSubscribeForm .af_S2PopupV8WithCross .textleft, #subscribePopupModal .af_S2PopupV8WithCross .textleft, #subscribePopupData .af_S2PopupV8WithRefuse .textleft, #containerSubscribeForm .af_S2PopupV8WithRefuse .textleft, #subscribePopupModal .af_S2PopupV8WithRefuse .textleft {
+      text-align: left !important; }
+    #subscribePopupData .af_S2PopupV8 hr, #containerSubscribeForm .af_S2PopupV8 hr, #subscribePopupModal .af_S2PopupV8 hr, #subscribePopupData .af_S2PopupV8WithCross hr, #containerSubscribeForm .af_S2PopupV8WithCross hr, #subscribePopupModal .af_S2PopupV8WithCross hr, #subscribePopupData .af_S2PopupV8WithRefuse hr, #containerSubscribeForm .af_S2PopupV8WithRefuse hr, #subscribePopupModal .af_S2PopupV8WithRefuse hr {
+      border-bottom: 1px solid #ddd; }
+    #subscribePopupData .af_S2PopupV8 .boldTitlev8, #containerSubscribeForm .af_S2PopupV8 .boldTitlev8, #subscribePopupModal .af_S2PopupV8 .boldTitlev8, #subscribePopupData .af_S2PopupV8WithCross .boldTitlev8, #containerSubscribeForm .af_S2PopupV8WithCross .boldTitlev8, #subscribePopupModal .af_S2PopupV8WithCross .boldTitlev8, #subscribePopupData .af_S2PopupV8WithRefuse .boldTitlev8, #containerSubscribeForm .af_S2PopupV8WithRefuse .boldTitlev8, #subscribePopupModal .af_S2PopupV8WithRefuse .boldTitlev8 {
+      line-height: 25px;
+      font-size: 28px;
+      text-align: center;
+      font-weight: initial;
+      font-family: 'Poppins'; }
+    #subscribePopupData .af_S2PopupV8 img, #containerSubscribeForm .af_S2PopupV8 img, #subscribePopupModal .af_S2PopupV8 img, #subscribePopupData .af_S2PopupV8WithCross img, #containerSubscribeForm .af_S2PopupV8WithCross img, #subscribePopupModal .af_S2PopupV8WithCross img, #subscribePopupData .af_S2PopupV8WithRefuse img, #containerSubscribeForm .af_S2PopupV8WithRefuse img, #subscribePopupModal .af_S2PopupV8WithRefuse img {
+      display: block;
+      margin: auto;
+      width: 75px;
+      padding-bottom: 10px; }
+    #subscribePopupData .af_S2PopupV8 a, #containerSubscribeForm .af_S2PopupV8 a, #subscribePopupModal .af_S2PopupV8 a, #subscribePopupData .af_S2PopupV8WithCross a, #containerSubscribeForm .af_S2PopupV8WithCross a, #subscribePopupModal .af_S2PopupV8WithCross a, #subscribePopupData .af_S2PopupV8WithRefuse a, #containerSubscribeForm .af_S2PopupV8WithRefuse a, #subscribePopupModal .af_S2PopupV8WithRefuse a {
+      text-align: center;
+      font-weight: bold;
+      color: #333; }
+    #subscribePopupData .af_S2PopupV8 .linkv8, #containerSubscribeForm .af_S2PopupV8 .linkv8, #subscribePopupModal .af_S2PopupV8 .linkv8, #subscribePopupData .af_S2PopupV8WithCross .linkv8, #containerSubscribeForm .af_S2PopupV8WithCross .linkv8, #subscribePopupModal .af_S2PopupV8WithCross .linkv8, #subscribePopupData .af_S2PopupV8WithRefuse .linkv8, #containerSubscribeForm .af_S2PopupV8WithRefuse .linkv8, #subscribePopupModal .af_S2PopupV8WithRefuse .linkv8 {
+      font-weight: initial;
+      text-decoration : underline; }
+    #subscribePopupData .af_S2PopupV8 .inputButtonv8, #containerSubscribeForm .af_S2PopupV8 .inputButtonv8, #subscribePopupModal .af_S2PopupV8 .inputButtonv8, #subscribePopupData .af_S2PopupV8WithCross .inputButtonv8, #containerSubscribeForm .af_S2PopupV8WithCross .inputButtonv8, #subscribePopupModal .af_S2PopupV8WithCross .inputButtonv8, #subscribePopupData .af_S2PopupV8WithRefuse .inputButtonv8, #containerSubscribeForm .af_S2PopupV8WithRefuse .inputButtonv8, #subscribePopupModal .af_S2PopupV8WithRefuse .inputButtonv8 {
+      margin-left: 15px;
+      background-color: #fef3ed;
+      font-weight: bold;
+      font-size: 15px;
+      color: #333;
+      padding: 10px;
+      border: 2px solid #333;
+      -webkit-border-radius : first-value-of(3px) first-value-of(3px);
+      -moz-border-radius : 3px / 3px;
+      border-radius : 3px / 3px;
+      margin-top: 10px;
+      cursor: pointer; }
+    #subscribePopupData .af_S2PopupV8 .footerPopupV8, #containerSubscribeForm .af_S2PopupV8 .footerPopupV8, #subscribePopupModal .af_S2PopupV8 .footerPopupV8, #subscribePopupData .af_S2PopupV8WithCross .footerPopupV8, #containerSubscribeForm .af_S2PopupV8WithCross .footerPopupV8, #subscribePopupModal .af_S2PopupV8WithCross .footerPopupV8, #subscribePopupData .af_S2PopupV8WithRefuse .footerPopupV8, #containerSubscribeForm .af_S2PopupV8WithRefuse .footerPopupV8, #subscribePopupModal .af_S2PopupV8WithRefuse .footerPopupV8 {
+      text-align: right; }
+    #subscribePopupData .af_S2PopupV8 .textlh, #containerSubscribeForm .af_S2PopupV8 .textlh, #subscribePopupModal .af_S2PopupV8 .textlh, #subscribePopupData .af_S2PopupV8WithCross .textlh, #containerSubscribeForm .af_S2PopupV8WithCross .textlh, #subscribePopupModal .af_S2PopupV8WithCross .textlh, #subscribePopupData .af_S2PopupV8WithRefuse .textlh, #containerSubscribeForm .af_S2PopupV8WithRefuse .textlh, #subscribePopupModal .af_S2PopupV8WithRefuse .textlh {
+      line-height: 20px; }
+    #subscribePopupData .af_S2PopupV8 .onleft, #containerSubscribeForm .af_S2PopupV8 .onleft, #subscribePopupModal .af_S2PopupV8 .onleft, #subscribePopupData .af_S2PopupV8WithCross .onleft, #containerSubscribeForm .af_S2PopupV8WithCross .onleft, #subscribePopupModal .af_S2PopupV8WithCross .onleft, #subscribePopupData .af_S2PopupV8WithRefuse .onleft, #containerSubscribeForm .af_S2PopupV8WithRefuse .onleft, #subscribePopupModal .af_S2PopupV8WithRefuse .onleft {
+      float: left;
+      margin-top: 19px; }
+  #subscribePopupData .boldTitle, #containerSubscribeForm .boldTitle, #subscribePopupModal .boldTitle {
+    font-family : 'cocogoose';
+    line-height: 30px;
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold; }
+  #subscribePopupData .contentBoldText, #containerSubscribeForm .contentBoldText, #subscribePopupModal .contentBoldText {
+    text-align: justify;
+    line-height: 30px;
+    margin: 10px; }
+  #subscribePopupData .littleText, #containerSubscribeForm .littleText, #subscribePopupModal .littleText {
+    font-size: 15px;
+    text-align: left; }
+  #subscribePopupData .center, #containerSubscribeForm .center, #subscribePopupModal .center {
+    text-align: center !important;
+    font-weight: bold; }
+  #subscribePopupData .agreeText, #containerSubscribeForm .agreeText, #subscribePopupModal .agreeText {
+    font-weight: 100;
+    margin-top: 10px; }
+  #subscribePopupData .logo, #containerSubscribeForm .logo, #subscribePopupModal .logo {
+    width: 100px;
+    margin-top: -15px; }
+  #subscribePopupData .firstText, #containerSubscribeForm .firstText, #subscribePopupModal .firstText {
+    font-family: 'cocogoose', sans-serif;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 20px; }
+  #subscribePopupData .titleConnexion, #containerSubscribeForm .titleConnexion, #subscribePopupModal .titleConnexion {
+    display: block;
+    margin-top: 30px;
+    font-size: 22px;
+    text-align: left; }
+  #subscribePopupData .titleSubscribeElement, #containerSubscribeForm .titleSubscribeElement, #subscribePopupModal .titleSubscribeElement {
+    font-family: 'cocogoose', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    display: block; }
+  #subscribePopupData .inputPassword, #containerSubscribeForm .inputPassword, #subscribePopupModal .inputPassword {
+    margin-top: 5px; }
+  #subscribePopupData .inputLogin, #containerSubscribeForm .inputLogin, #subscribePopupModal .inputLogin {
+    margin-top: 15px; }
+  #subscribePopupData .inputButton, #containerSubscribeForm .inputButton, #subscribePopupModal .inputButton {
+    width: 100%;
+    -webkit-border-radius : first-value-of(3px) first-value-of(3px);
+    -moz-border-radius : 3px / 3px;
+    border-radius : 3px / 3px;
+    cursor: pointer;
+    background-color: #812555;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 0;
+    font-family: 'cocogoose', sans-serif;
+    height: 38px;
+    margin-top: 5px;
+    margin-bottom: 10px; }
+  #subscribePopupData .noAccountText, #containerSubscribeForm .noAccountText, #subscribePopupModal .noAccountText {
+    font-size: 14px; }
+  #subscribePopupData .optinText, #containerSubscribeForm .optinText, #subscribePopupModal .optinText {
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: left; }
+  #subscribePopupData .containerRadio, #containerSubscribeForm .containerRadio, #subscribePopupModal .containerRadio {
+    text-align: left; }
+  #subscribePopupData .subscribeText, #containerSubscribeForm .subscribeText, #subscribePopupModal .subscribeText {
+    font-size: 14px;
+    margin-left: 3px;
+    text-decoration: underline;
+    cursor: pointer; }
+  #subscribePopupData .orText, #containerSubscribeForm .orText, #subscribePopupModal .orText {
+    margin-top: 20px;
+    line-height: 0.5;
+    text-align: center;
+    display: block; }
+  #subscribePopupData .orText span, #containerSubscribeForm .orText span, #subscribePopupModal .orText span {
+    display: inline-block;
+    position: relative; }
+  #subscribePopupData .orText span:before, #containerSubscribeForm .orText span:before, #subscribePopupModal .orText span:before, #subscribePopupData .orText span:after, #containerSubscribeForm .orText span:after, #subscribePopupModal .orText span:after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    border-top: 1px solid gray;
+    top: 5px;
+    width: 60px; }
+  #subscribePopupData .orText span:before, #containerSubscribeForm .orText span:before, #subscribePopupModal .orText span:before {
+    right: 100%;
+    margin-right: 15px; }
+  #subscribePopupData .orText span:after, #containerSubscribeForm .orText span:after, #subscribePopupModal .orText span:after {
+    left: 100%;
+    margin-left: 15px; }
+  #subscribePopupData .inputFbConnect, #containerSubscribeForm .inputFbConnect, #subscribePopupModal .inputFbConnect {
+    width: 100%;
+    -webkit-border-radius : first-value-of(3px) first-value-of(3px);
+    -moz-border-radius : 3px / 3px;
+    border-radius : 3px / 3px;
+    cursor: pointer;
+    background-color: #2d609b;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 0;
+    font-family: 'cocogoose', sans-serif;
+    height: 38px;
+    margin-top: 15px;
+    margin-bottom: 10px; }
+  #subscribePopupData .forgetPasswordText, #containerSubscribeForm .forgetPasswordText, #subscribePopupModal .forgetPasswordText {
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+    color: gray; }
+  #subscribePopupData .inputRadio, #containerSubscribeForm .inputRadio, #subscribePopupModal .inputRadio {
+    margin-right: 5px; }
+  #subscribePopupData .radioText, #containerSubscribeForm .radioText, #subscribePopupModal .radioText {
+    margin-right: 15px;
+    font-size: 14px; }
+  #subscribePopupData .subscribeButton, #containerSubscribeForm .subscribeButton, #subscribePopupModal .subscribeButton {
+    margin-top: 15px; }
+  #subscribePopupData .iconarrow, #containerSubscribeForm .iconarrow, #subscribePopupModal .iconarrow {
+    font-size: 15px;
+    line-height: 12px;
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    padding: 5px 7px 7px;
+    cursor: pointer;
+    color: #812555;
+    border: 0;
+    outline: none;
+    background-color: #fff; }
+  #subscribePopupData .errorMessage, #containerSubscribeForm .errorMessage, #subscribePopupModal .errorMessage {
+    color: #d6364a;
+    display: block;
+    font-size: 12px;
+    font-weight: 100; }
+  #subscribePopupData #subscribePopup, #containerSubscribeForm #subscribePopup, #subscribePopupModal #subscribePopup {
+    display: none; }
+
+#containerSubscribeForm {
+  margin: 5px auto 30px auto;
+  width: 350px;
+  position: relative;
+  border : 1px solid #eee;
+  -webkit-border-radius : first-value-of(3px) first-value-of(3px);
+  -moz-border-radius : 3px / 3px;
+  border-radius : 3px / 3px;
+  box-shadow: -1px 2px 5px 1px #eee, -1px 2px 20px rgba(255, 255, 255, 0.6) inset;
+  padding: 20px; }
+
+.hideToPremium {
+  font-size: 34px !important;
+  z-index: 999999999999;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, white 85%, white);
+  position: absolute; }

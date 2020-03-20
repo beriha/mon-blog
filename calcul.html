@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/fontawesome-free-5.12.1-web/css/all.css">
+    <link rel="stylesheet" href="calcul.css">
+    <title> ma calculatrice</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="former">
+
+  <h1> CALCULATRICE</h1>
+  <form class="formulaire" method="post">
+    <div class="label">
+      <label for="article">choose an article:</label>
+      <select class="article" name="article"id="article" onchange="prixU()">
+      <option value="article 0">0</option>
+      <option value="1">Article 1</option>
+      <option value="2">Article2</option>
+      <option value=" 3">Article3</option>
+      <option value=" 4">Article4</option>
+      <option value=" 5">Article5</option>
+      <option value=" 6">Article6</option>
+    </select><br>
+      <label for="prix">Prix unitaire</label>
+      <input type="text" id="prix" name="prix" value=""disabled>
+      <label for="Nombre">Nombre d'article</label>
+      <input type="text" id="nbre" name="nbre" value="" onkeyup="prixU()">
+      <label for="total">Total a payer</label>
+      <input type="text" id="total" name="total" value=""disabled>
+      <input type="submit" value="envoyer">
+      <input type="reset" value="annuler">
+  </div>
+  </form>
+  </div>
+  </div>
+<script src="java.js">
+
+</script>
+  </body>
+</html>

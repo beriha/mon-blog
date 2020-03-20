@@ -1,0 +1,169 @@
+var af_S2PopupV8 = {
+	init : function() {
+        document.body.addEventListener('endmodal',function(){
+			af_S2PopupV8.initPopup();
+	    });
+	    var maxWidthPopup = '550px';
+	    if ( window.innerWidth < '550' ) {
+	    	maxWidthPopup = '80%';
+	    }
+		var myModal = new AfModal({
+			container : 'subscribePopupData',
+			content: af_SubscribeTools.idModal,
+			maxWidth: maxWidthPopup,
+			minWidth: maxWidthPopup,
+			withoutcontent : true,
+			closeButton:false,
+			possibleToClose:false,
+		});
+		myModal.open();
+		this.myModal = myModal;
+		var elem = document.getElementById('subscribePopupModal'); 
+		elem.style.backgroundColor = "#FEF3ED";
+		elem.className = elem.className + " borderRadius9";
+		PubSub.subscribe('cmp.display.popup',function(){
+			af_gaqTrackEvent('AF_GDPR', 'af_S2PopupV8showSelectVendor');
+		});
+		PubSub.subscribe('cmp.click.acceptonpopup',function(){
+			af_gaqTrackEvent('AF_GDPR', 'af_S2PopupV8ClickOnAcceptAfterChooseVendor');
+			af_S2PopupV8.myModal.close();
+		});
+	},
+
+	initPopup : function() {
+		af_gaqTrackEvent('AF_GDPR', 'af_S2PopupV8');
+		this.template = Handlebars.compile(document.getElementById('af_S2PopupV8').innerHTML);
+		var container = document.getElementById(af_SubscribeTools.idModal);
+		var contentPopup = af_SubscribeTools.createNewElement('div',{'className' : 'subscribePopup','id' : af_SubscribeTools.idContainer});
+		container.innerHTML = this.template();
+		var inputAcceptButton = document.getElementById('af_S2PopupV8-acceptButton');
+		inputAcceptButton.addEventListener('click',function(){
+			af_gaqTrackEvent('AF_GDPR', 'af_S2PopupV8Accept');
+			af_S2PopupV8.myModal.close();
+		});
+	},
+}
+var af_S2PopupV8WithCross = {
+	init : function() {
+        document.body.addEventListener('endmodal',function(){
+			af_S2PopupV8WithCross.initPopup();
+	    });
+	    var maxWidthPopup = '550px';
+	    if ( window.innerWidth < '550' ) {
+	    	maxWidthPopup = '80%';
+	    }
+		var myModal = new AfModal({
+			container : 'subscribePopupData',
+			content: af_SubscribeTools.idModal,
+			maxWidth: maxWidthPopup,
+			minWidth: maxWidthPopup,
+			withoutcontent : true,
+			closeButton:false,
+			possibleToClose:false,
+		});
+		myModal.open();
+		this.myModal = myModal;
+		var elem = document.getElementById('subscribePopupModal'); 
+		elem.style.backgroundColor = "#FEF3ED";
+		elem.className = elem.className + " borderRadius9";
+		PubSub.subscribe('cmp.display.popup',function(){
+			af_gaqTrackEvent('AF_GDPR', 'af_S2PopupV8WithCrossshowSelectVendor');
+		});
+		PubSub.subscribe('cmp.click.acceptonpopup',function(){
+			af_gaqTrackEvent('AF_GDPR', 'af_S2PopupV8WithCrossClickOnAcceptAfterChooseVendor');
+			af_S2PopupV8WithCross.myModal.close();
+		});
+	},
+
+	initPopup : function() {
+		af_gaqTrackEvent('AF_GDPR', 'af_S2PopupV8WithCross');
+		this.template = Handlebars.compile(document.getElementById('af_S2PopupV8WithCross').innerHTML);
+		var container = document.getElementById(af_SubscribeTools.idModal);
+		var contentPopup = af_SubscribeTools.createNewElement('div',{'className' : 'subscribePopup','id' : af_SubscribeTools.idContainer});
+		container.innerHTML = this.template();
+		var inputAcceptButton = document.getElementById('af_S2PopupV8WithCross-acceptButton');
+		var inputCrossButton = document.getElementById('crossClose');
+		inputAcceptButton.addEventListener('click',function(){
+			af_gaqTrackEvent('AF_GDPR', 'af_S2PopupV8WithCrossAccept');
+			af_S2PopupV8WithCross.myModal.close();
+		});
+		inputCrossButton.addEventListener('click',function(){
+			af_gaqTrackEvent('AF_GDPR', 'af_S2PopupV8WithCrossClickCross');
+			af_S2PopupV8WithCross.myModal.close();
+		});
+	},
+}
+var af_S2PopupV8WithRefuse = {
+	init : function() {
+        document.body.addEventListener('endmodal',function(){
+			af_S2PopupV8WithRefuse.initPopup();
+	    });
+	    var maxWidthPopup = '550px';
+	    if ( window.innerWidth < '550' ) {
+	    	maxWidthPopup = '80%';
+	    }
+		var myModal = new AfModal({
+			container : 'subscribePopupData',
+			content: af_SubscribeTools.idModal,
+			maxWidth: maxWidthPopup,
+			minWidth: maxWidthPopup,
+			withoutcontent : true,
+			closeButton:false,
+			possibleToClose:false,
+		});
+		myModal.open();
+		this.myModal = myModal;
+		var elem = document.getElementById('subscribePopupModal'); 
+		elem.style.backgroundColor = "#FEF3ED";
+		elem.className = elem.className + " borderRadius9";
+		PubSub.subscribe('cmp.display.popup',function(){
+			af_gaqTrackEvent('AF_GDPR', 'af_S2PopupV8WithRefuseshowSelectVendor');
+		});
+		PubSub.subscribe('cmp.click.acceptonpopup',function(){
+			af_gaqTrackEvent('AF_GDPR', 'af_S2PopupV8WithRefuseClickOnAcceptAfterChooseVendor');
+			af_S2PopupV8WithRefuse.myModal.close();
+		});
+	},
+
+	initPopup : function() {
+		af_gaqTrackEvent('AF_GDPR', 'af_S2PopupV8WithRefuse');
+		this.template = Handlebars.compile(document.getElementById('af_S2PopupV8WithRefuse').innerHTML);
+		var container = document.getElementById(af_SubscribeTools.idModal);
+		var contentPopup = af_SubscribeTools.createNewElement('div',{'className' : 'subscribePopup','id' : af_SubscribeTools.idContainer});
+		container.innerHTML = this.template();
+		var inputAcceptButton = document.getElementById('af_S2PopupV8WithRefuse-acceptButton');
+		var inputRefuseButton = document.getElementById('af_S2PopupV8WithRefuse-refuseButton');
+		inputAcceptButton.addEventListener('click',function(){
+			af_gaqTrackEvent('AF_GDPR', 'af_S2PopupV8WithRefuseAccept');
+			af_S2PopupV8WithRefuse.myModal.close();
+		});
+		inputRefuseButton.addEventListener('click',function(){
+			af_gaqTrackEvent('AF_GDPR', 'af_S2PopupV8WithRefuseRefuse');
+			af_S2PopupV8WithRefuse.myModal.close();
+		});
+	},
+}
+jquery$(function(){
+
+	/*if ( typeof af_isConnected !== 'undefined' && af_isConnected == '0' && !afSession.isPaid() ) {
+		var random = parseInt(Math.random()*30 );
+		if ( random <= 3 ) {
+			switch (random) {
+				case 1 :
+					af_S2PopupV8.init();
+				break;
+				case 2 :
+					 af_S2PopupV8WithCross.init();
+				break;
+				case 3 :
+					 af_S2PopupV8WithRefuse.init();
+				break;
+			}
+		}
+	}*/
+	
+	if (  window.location.href.indexOf('af_S2PopupV8=1') != -1) af_S2PopupV8.init();
+	if (  window.location.href.indexOf('af_S2PopupV8WithCross=1') != -1) af_S2PopupV8WithCross.init();
+	if (  window.location.href.indexOf('af_S2PopupV8WithRefuse=1') != -1) af_S2PopupV8WithRefuse.init();
+
+});
